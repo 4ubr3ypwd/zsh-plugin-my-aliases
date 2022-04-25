@@ -83,7 +83,6 @@ alias matrix='cmatrix'
 
 # WP-CLI
 alias wpeach='wp site list --field=url | xargs -n1 -I % wp --url=%' # On each subsite, run a command.
-alias wpdbex='wp db export - | gzip -9 -f >' # Export a database and compress the file.
 
 # xattr
 alias clearatts="xattr -cr"
