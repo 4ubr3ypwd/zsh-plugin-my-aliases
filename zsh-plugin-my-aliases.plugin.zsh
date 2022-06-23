@@ -103,3 +103,6 @@ alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 # AwesomeMotive / AffiliateWP
 alias affwp:build='composer install || composer update && na && npm ci || npm i && npm run build'
+
+# PHP Versions
+alias php@74="/opt/homebrew/Cellar/php@7.4/7.4.30/bin/php"
