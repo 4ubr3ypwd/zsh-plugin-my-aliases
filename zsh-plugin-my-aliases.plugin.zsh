@@ -42,8 +42,8 @@ alias fd~="fd 50" # Super deep.
 alias vim="vim -c 'startinsert'" # Start Vim in insert mode (mostly for commit writing).
 alias repo="cd ~/Repos && fdd" # An easy way to get to a repo using my ffd command.
 alias loc="cd ~/Sites/Local && fd && cd app/public || true" # Quick way to get to a site
-alias val="cd ~/Sites/Valet && fd 1" # Quick way to get to a site
-alias site="loc"
+alias val="cd ~/Sites/Valet && fd 1 || true" # Quick way to get to a site
+alias site="cd ~/Sites && fd || true"
 alias antigenfd="cd ~/.antigen/bundles/aubreypwd && fd" # An easy way to get to a bundle.
 alias locals="cd ~/Sites/Local && fd 3" # An easy way to get to a local.
 alias high='highlight -O ansi'
@@ -103,6 +103,3 @@ alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 # AwesomeMotive / AffiliateWP
 alias affwp:build='composer install || composer update && na && npm ci || npm i && npm run build'
-
-# PHP Versions
-alias php@7.4="/opt/homebrew/Cellar/php@7.4/7.4.30/bin/php"
